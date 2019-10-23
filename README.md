@@ -2,27 +2,26 @@
 
 ```
 File Directories:
-```bash
 |-- README.md
-|-- LICENSE
-|-- Basics
-    |-- DSCN4601.JPG
-    |-- facial_recognition.py
-    |-- haarcascade_frontalface_default.xml
+|-- Line Graph
+|-- Scatter Plot
+|-- Histogram
 ```
+
 ### Dataset Link
 https://course-resources.minerva.kgi.edu/uploaded_files/mke/rx9A0n/s1-student-version--ea-assignment--climate-change--land-ice-mass-data---sheet1.csv
 
 Basic data visualizations in Python
 1. Line graph of LAND ICE MASS DATA detailing the anomalies relative to timeseries mean
-2. Scatter plot of Greenland mass (Gt) against 'Antarctica mass (Gt)
+2. Scatter plot of Greenland mass (Gt) against Antarctica mass (Gt)
 3. Histogram of the frequency of Greenland mass (Gt)
 
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
 
-url = 'https://course-resources.minerva.kgi.edu/uploaded_files/mke/rx9A0n/s1-student-version--ea-assignment--climate-change--land-ice-mass-data---sheet1.csv'
+url = 'https://course-resources.minerva.kgi.edu/uploaded_files/mke/rx9A0n/\
+s1-student-version--ea-assignment--climate-change--land-ice-mass-data---sheet1.csv'
 txt = "I need the caption to be present a little below X-axis"
 
 df = pd.read_csv(url)[10:]
@@ -50,7 +49,8 @@ plt.show()
 import pandas as pd
 import matplotlib.pyplot as plt
 
-url = 'https://course-resources.minerva.kgi.edu/uploaded_files/mke/rx9A0n/s1-student-version--ea-assignment--climate-change--land-ice-mass-data---sheet1.csv'
+url = 'https://course-resources.minerva.kgi.edu/uploaded_files/mke/rx9A0n/\
+s1-student-version--ea-assignment--climate-change--land-ice-mass-data---sheet1.csv'
 
 df = pd.read_csv(url)[10:]
 df = df.reset_index(drop=True)
@@ -75,7 +75,8 @@ plt.show()
 import pandas as pd
 import matplotlib.pyplot as plt
 
-url = 'https://course-resources.minerva.kgi.edu/uploaded_files/mke/rx9A0n/s1-student-version--ea-assignment--climate-change--land-ice-mass-data---sheet1.csv'
+url = 'https://course-resources.minerva.kgi.edu/uploaded_files/mke/rx9A0n/\
+s1-student-version--ea-assignment--climate-change--land-ice-mass-data---sheet1.csv'
 
 df = pd.read_csv(url)[10:]
 df = df.reset_index(drop=True)
