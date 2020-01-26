@@ -19,9 +19,9 @@ Basic data visualizations in Python
 ### Line Plot
 ![png](output_0_0.png)
 
-### Histogram
+### Scatter Plot
 ![png](output_1_0.png)
 
-### Scatter Plot
+### Histogram
 ![png](output_2_0.png)
 
